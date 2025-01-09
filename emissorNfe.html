@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emissão de NFS-e</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Emissão de NFS-e</h1>
+        
+        <form id="nfsForm">
+            <label for="valorVenda">Valor da Venda (R$):</label>
+            <input type="number" id="valorVenda" required>
+            <br>
+
+            <label for="itens">Itens Vendidos:</label>
+            <input type="text" id="itens" required>
+            <br>
+
+            <label for="irpf">Porcentagem do Imposto IRPF (%):</label>
+            <input type="number" id="irpf" required>
+            <br>
+            <label for="pis">Porcentagem do Imposto PIS (%):</label>
+            <input type="number" id="pis" required>
+            <br>
+            <label for="cofins">Porcentagem do Imposto COFINS (%):</label>
+            <input type="number" id="cofins" required>
+            <br>
+            <label for="inss">Porcentagem do Imposto INSS (%):</label>
+            <input type="number" id="inss" required>
+            <br>
+            <label for="issqn">Porcentagem do Imposto ISSQN (%):</label>
+            <input type="number" id="issqn" required>
+            <br>
+            <br>
+            <button type="submit">Gerar Nota Fiscal</button>
+        </form>
+
+        <div id="notaFiscal" class="nota-fiscal">
+            <h2>Nota Fiscal de Serviço</h2>
+            <p><strong>Valor da Venda:</strong> R$ <span id="valorVendaDisplay"></span></p>
+            <p><strong>Itens Vendidos:</strong> <span id="itensDisplay"></span></p>
+            <p><strong>Imposto IRPF:</strong> R$ <span id="irpfDisplay"></span></p>
+            <p><strong>Imposto PIS:</strong> R$ <span id="pisDisplay"></span></p>
+            <p><strong>Imposto COFINS:</strong> R$ <span id="cofinsDisplay"></span></p>
+            <p><strong>Imposto INSS:</strong> R$ <span id="inssDisplay"></span></p>
+            <p><strong>Imposto ISSQN:</strong> R$ <span id="issqnDisplay"></span></p>
+            <p><strong>Total de Impostos:</strong> R$ <span id="totalImpostos"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
